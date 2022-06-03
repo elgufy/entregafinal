@@ -1,0 +1,25 @@
+.contacto{
+    background-color: rgb(202, 202, 202);
+    display: grid;
+    position: relative;
+    top: 800px;
+    grid-template-columns: 50% 50%;
+    .contacto__formulario{
+        text-align: center;
+    }
+    .contacto__nosotros{
+        text-align: center;
+        .contacto__nosotros__datos{
+            padding: 0px;
+        }
+    }
+}
+.subtitulo{
+    color: green;
+}
+@media only screen and (max-width: 990px){
+    .contacto{
+        display: flex;
+        flex-direction: column;
+    }
+}

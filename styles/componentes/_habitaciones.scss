@@ -1,0 +1,25 @@
+.container{
+    position: relative;
+    top: 800px;
+    .row{
+        .col{
+            .card:hover{
+                width: 12rem;
+                box-shadow: 10px 10px 10px black;
+            }
+            .card{
+                border: 2px black ridge;
+                box-shadow: 2px 2px 5px black;
+                width: 13rem;
+                margin: 5px;
+                transition: all .7s;
+                .card-text{
+                    font-size: 14px;
+                }
+                .card-body{
+                    background-color: rgb(200, 200, 200);
+                }
+            }
+        }
+    }
+}

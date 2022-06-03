@@ -1,0 +1,456 @@
+.cabecera__responsive {
+  display: none;
+}
+
+.cabecera {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.cabecera .cabecera__imagen {
+  display: inline-block;
+  padding: 20px;
+  width: 200px;
+}
+
+.cabecera .cabecera__navegacion__lista .lista__link {
+  display: inline-block;
+  padding: 30px;
+  position: relative;
+}
+
+.cabecera .cabecera__navegacion__lista .lista__link .link__home:hover {
+  text-shadow: 4px 4px 5px white;
+}
+
+.cabecera .cabecera__navegacion__lista .lista__link .link__habitaciones:hover {
+  text-shadow: 4px 4px 5px white;
+}
+
+.cabecera .cabecera__navegacion__lista .lista__link .link__servicios:hover {
+  text-shadow: 4px 4px 5px white;
+}
+
+.cabecera .cabecera__navegacion__lista .lista__link .link__gastronomia:hover {
+  text-shadow: 4px 4px 5px white;
+}
+
+.cabecera .cabecera__navegacion__lista .lista__link .link__contacto:hover {
+  text-shadow: 4px 4px 5px white;
+}
+
+.cabecera .cabecera__navegacion__lista .lista__link .lista__link__ancor {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  -webkit-transition: all .7s;
+  transition: all .7s;
+}
+
+.cabecera .cabecera__navegacion__lista .lista__link .lista__link__ancor:hover {
+  color: white;
+}
+
+.cabecera .cabecera__navegacion__lista .lista__link .active {
+  text-decoration: underline;
+}
+
+.cabecera .cabecera__div__logos {
+  display: inline-block;
+  padding: 20px;
+}
+
+.cabecera .cabecera__div__logos .div__logos {
+  display: inline-block;
+  width: 40px;
+  margin: 20px;
+}
+
+.cabecera__responsive__nav {
+  background-color: green;
+  position: relative;
+  top: -11px;
+}
+
+.logo__responsive {
+  padding: 20px;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 990px) {
+  .cabecera {
+    display: none;
+  }
+  .cabecera__responsive {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 1175px) {
+  .cabecera .cabecera__div__logos {
+    padding: 10px;
+  }
+  .cabecera .cabecera__div__logos .div__logos {
+    margin: 14px;
+  }
+  .cabecera .cabecera__imagen {
+    padding: 14px;
+  }
+  .cabecera .cabecera__navegacion__lista .lista__link {
+    padding: 15px;
+  }
+}
+
+.fondo__principal {
+  background-image: url(../../Eleton-Resort/imagenes/principal_eleton.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100vh;
+}
+
+.fondo__habitaciones {
+  background-image: url(../../Eleton-Resort/imagenes/habitacion-fondo.jpeg);
+  background-repeat: no-repeat;
+  background-size: 100% 100vh;
+}
+
+.fondo__servicios {
+  background-image: url(../../Eleton-Resort/imagenes/pileta-spa-chiquita.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100vh;
+}
+
+.fondo__gastronomia {
+  background-image: url(../../Eleton-Resort/imagenes/fondogastronomia.jpeg);
+  background-repeat: no-repeat;
+  background-size: 100% 100vh;
+}
+
+.fondo__contacto {
+  background-image: url(../../Eleton-Resort/imagenes/lobby1.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100vh;
+}
+
+.div-carousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.div-carousel .carousel {
+  width: 60%;
+  position: relative;
+  top: 800px;
+}
+
+.servicios {
+  display: -ms-grid;
+  display: grid;
+  position: relative;
+  top: 850px;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+}
+
+.servicios .servicios__fotos {
+  width: 100%;
+  height: 400px;
+}
+
+.servicios .servicios__texto {
+  background-color: #cacaca;
+  text-align: center;
+}
+
+.servicios__texto span {
+  position: relative;
+  top: 150px;
+}
+
+.servicios__titulos {
+  color: green;
+  font-size: 34px;
+}
+
+.formulario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #cacaca;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  top: 900px;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.formulario .formulario__titulo {
+  color: green;
+  position: relative;
+  left: 90px;
+}
+
+.formulario .formulario__casillas {
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+}
+
+@media only screen and (max-width: 990px) {
+  .servicios {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+        grid-template-areas: "spa1" "spa" "teatro1" "teatro" "piscina1" "piscina" "cocteles1" "cocteles";
+    top: 850px;
+  }
+  .servicios .servicios__texto {
+    padding: 10px;
+  }
+  .servicios .servicios__texto .servicios__titulos {
+    top: 0px;
+  }
+  .servicios .servicios__texto .servicios__descripcion {
+    top: 0px;
+  }
+  .servicios .foto__spa {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: spa;
+  }
+  .servicios .foto__teatro {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: teatro;
+  }
+  .servicios .foto__piscina {
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
+    grid-area: piscina;
+  }
+  .servicios .texto__spa {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: spa1;
+  }
+  .servicios .texto__teatro {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: teatro1;
+  }
+  .servicios .texto__piscina {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    grid-area: piscina1;
+  }
+  .servicios .foto__cocteles {
+    -ms-grid-row: 8;
+    -ms-grid-column: 1;
+    grid-area: cocteles;
+  }
+  .servicios .texto__cocteles {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+    grid-area: cocteles1;
+  }
+}
+
+.footer {
+  background-color: green;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 950px;
+}
+
+.footer .footer__lista {
+  display: inline-block;
+  position: relative;
+  left: 7%;
+}
+
+.footer .footer__redes {
+  display: inline-block;
+  position: relative;
+  left: 37%;
+}
+
+.footer .footer__redes .footer__redes1 {
+  margin: 50px;
+  width: 50px;
+  display: inline-block;
+}
+
+@media only screen and (max-width: 990px) {
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer .footer__redes {
+    left: 0%;
+  }
+  .footer .footer__redes .footer__redes1 {
+    width: 70px;
+  }
+  .footer .footer__imagen {
+    padding: 20px;
+    width: 250px;
+  }
+}
+
+.container {
+  position: relative;
+  top: 800px;
+}
+
+.container .row .col .card:hover {
+  width: 12rem;
+  -webkit-box-shadow: 10px 10px 10px black;
+          box-shadow: 10px 10px 10px black;
+}
+
+.container .row .col .card {
+  border: 2px black ridge;
+  -webkit-box-shadow: 2px 2px 5px black;
+          box-shadow: 2px 2px 5px black;
+  width: 13rem;
+  margin: 5px;
+  -webkit-transition: all .7s;
+  transition: all .7s;
+}
+
+.container .row .col .card .card-text {
+  font-size: 14px;
+}
+
+.container .row .col .card .card-body {
+  background-color: #c8c8c8;
+}
+
+.principal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  top: 100vh;
+  color: green;
+}
+
+.principal .bienvenida {
+  font-size: 34px;
+}
+
+.principal .bienvenida__introduccion {
+  text-align: center;
+  font-size: 17px;
+  color: black;
+}
+
+.contacto {
+  background-color: #cacaca;
+  display: -ms-grid;
+  display: grid;
+  position: relative;
+  top: 800px;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+}
+
+.contacto .contacto__formulario {
+  text-align: center;
+}
+
+.contacto .contacto__nosotros {
+  text-align: center;
+}
+
+.contacto .contacto__nosotros .contacto__nosotros__datos {
+  padding: 0px;
+}
+
+.subtitulo {
+  color: green;
+}
+
+@media only screen and (max-width: 990px) {
+  .contacto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.gastronomia {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 33% 33% 33%;
+      grid-template-columns: 33% 33% 33%;
+  position: relative;
+  top: 700px;
+  text-align: center;
+}
+
+.gastronomia .platos {
+  text-align: center;
+}
+
+.gastronomia .platos .platos__foto {
+  padding: 5px;
+  width: 300px;
+  border-radius: 50px;
+}
+
+.gastronomia__titulo {
+  color: green;
+}
+
+@media only screen and (max-width: 950px) {
+  .gastronomia {
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+  }
+  .platonoplato {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .plato1 {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */

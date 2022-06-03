@@ -1,0 +1,39 @@
+.footer{
+    background-color: green;
+    position: relative;
+    display: flex;
+    align-items: center;
+    top: 950px;
+    .footer__lista{
+        display: inline-block;
+        position: relative;
+        left: 7%;
+    }
+    .footer__redes{
+        display: inline-block;
+        position: relative;
+        left: 37%;
+        .footer__redes1{
+            margin: 50px;
+            width: 50px;
+            display: inline-block;
+
+        }
+    }
+}
+
+@media only screen and (max-width: 990px){
+    .footer{
+        flex-direction: column;
+        .footer__redes{
+            left: 0%;
+            .footer__redes1{
+                width: 70px;
+            }
+        }
+        .footer__imagen{
+            padding: 20px;
+            width: 250px;
+        }
+    }
+}

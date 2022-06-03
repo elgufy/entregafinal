@@ -1,0 +1,89 @@
+.cabecera__responsive{
+    display: none;
+}
+.cabecera{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0) 100%);
+   
+    .cabecera__imagen{
+        display: inline-block;
+        padding: 20px;
+        width: 200px;   
+        }
+  
+    .cabecera__navegacion__lista{
+        .lista__link{
+            display: inline-block;
+            padding: 30px;
+            position: relative;
+
+            .link__home:hover{text-shadow: 4px 4px 5px white}
+            .link__habitaciones:hover{text-shadow: 4px 4px 5px white}
+            .link__servicios:hover{text-shadow: 4px 4px 5px white}
+            .link__gastronomia:hover{text-shadow: 4px 4px 5px white}
+            .link__contacto:hover{text-shadow: 4px 4px 5px white}
+
+            .lista__link__ancor{
+                text-decoration: none;
+                color: white;
+                font-size: 20px;
+                transition: all .7s;
+                &:hover{
+                    color: white;
+                }
+            }
+            .active{
+                text-decoration: underline;
+            }
+        }        
+    }
+    .cabecera__div__logos{
+        display: inline-block;
+        padding: 20px;
+        .div__logos{
+            display: inline-block;
+            width: 40px;
+            margin: 20px;
+        }
+    }
+}
+    .cabecera__responsive__nav{
+        background-color: green;
+        position: relative;
+        top: -11px;
+    }
+    .logo__responsive{
+        padding: 20px;
+    }
+    .active{
+        text-decoration: underline;
+    }
+@media only screen and (max-width: 990px) {
+    .cabecera{
+        display: none;
+    }
+    .cabecera__responsive{
+        display: block;
+    }
+
+}
+@media only screen and (max-width: 1175px){
+    .cabecera{
+        .cabecera__div__logos{
+            padding: 10px;
+            .div__logos{
+                margin: 14px;
+            }
+        }
+        .cabecera__imagen{
+            padding: 14px;
+        }
+        .cabecera__navegacion__lista{
+            .lista__link{
+                padding: 15px;
+            }
+        }
+    }
+}

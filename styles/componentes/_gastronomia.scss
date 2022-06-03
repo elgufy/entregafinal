@@ -1,0 +1,32 @@
+.gastronomia{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    position: relative;
+    top: 700px;
+    text-align: center;
+    .platos{
+        text-align: center;
+        .platos__foto{
+            padding: 5px;
+            width: 300px;
+            border-radius: 50px;
+        }
+
+    }
+}
+.gastronomia__titulo{
+    color: green;
+}
+@media only screen and (max-width:950px){
+    .gastronomia{
+        grid-template-columns: 50% 50%;
+
+    }
+    .platonoplato{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .plato1{
+        display: none;
+    }
+}

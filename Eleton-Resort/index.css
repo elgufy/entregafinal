@@ -1,0 +1,288 @@
+body{
+    margin-top :0%;
+    margin-left: 0%;
+    margin-right: 0%;
+
+}
+.fondo__principal{
+    background-image: url(./imagenes/principal_eleton.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+}
+.fondo__habitaciones{
+    background-image: url(./imagenes/habitacion\ fondo.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+}
+
+.cabecera{
+
+    display: flex;
+   justify-content: space-between;
+   align-items:center;
+}
+.cabecera__imagen{
+   display: inline-block; 
+   padding: 20px;
+   width: 200px;
+}
+
+.lista__link{
+    display: inline-block;
+    padding: 40px;
+    position: relative;
+    
+}
+.lista__link__ancor:hover{
+    color: white;
+}
+.lista__link__ancor{
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+    transition: all .7s;
+}
+
+.active{
+    text-decoration: underline;
+}
+.link__home:hover{
+    text-shadow: 4px 4px 5px white;
+}
+.link__habitaciones:hover{
+    text-shadow: 4px 4px 5px white;
+}
+.link__servicios:hover{
+    text-shadow: 4px 4px 5px white;
+}
+.link__gastronomia:hover{
+    text-shadow: 4px 4px 5px white;
+}
+.link__contacto:hover{
+    text-shadow: 4px 4px 5px white;
+}
+
+.cabecera__div__logos{
+    display: inline-block;
+    padding: 20px;
+}
+.div__logos{
+    display: inline-block;
+    width: 40px;
+    margin: 20px;
+    
+
+}
+
+/* Me gustaria que esta animacion no cambie el lugar de los demas elementos del header*/
+
+
+.principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 750px;
+    color: green;
+}
+.bienvenida__introduccion{
+    text-align: center;
+    font-size: 17px;
+    color: black;
+}
+.bienvenida{
+    font-size: 34px;
+}
+.carousel{
+    width: 60%;
+    position: relative;
+    top: 800px;
+}
+.div-carousel{
+    display: flex;
+    justify-content: center;
+} 
+.servicios{
+    display: grid;
+    position: relative;
+    top: 850px;
+    grid-template-columns: 50% 50%;
+
+}
+.servicios__fotos{
+ width: 100%;
+ height: 400px;   
+}
+.servicios__texto{
+    background-color:rgb(202, 202, 202);
+    text-align: center;
+}
+.servicios__texto span{
+    position: relative;
+    top: 150px;
+}
+.servicios__titulos{
+    color: green;
+    font-size: 34px
+}
+
+.formulario{
+    display: flex;
+    background-color:rgb(202, 202, 202);
+    flex-direction: column;
+    top: 900px;
+     position: relative;
+     align-items: center;
+}
+.formulario__titulo{
+    color: green;
+    position: relative;
+    left: 90px;
+}
+.formulario__casillas{
+    display: grid;
+    text-align: center;
+}
+
+
+
+.footer{
+    background-color: green;
+    position: relative;
+    display: flex;
+    align-items: center;
+    top: 1000px;
+}
+.footer__lista{
+    display: inline-block;
+
+    
+}
+.footer__redes{
+    display: inline-block;
+    position: relative;
+    left: 30%;
+    
+
+}
+.footer__redes1{
+    margin: 50px;
+    width: 50px;
+    display: inline-block;
+    transition: all .7s;
+}
+
+
+
+.habitaciones__menu{
+    display: flex;
+    position: relative;
+    top: 800px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.habitaciones__div{
+    margin: 2px;
+    background-color: rgb(202, 202, 202);
+    border: 2px black groove;
+}
+.habitaciones__fotos{
+    width: 220px;
+}
+.habitaciones__texto{
+text-align: center;
+}
+.card-text{
+    font-size: 14px;
+}
+.card{
+    border: 2px black ridge;
+    box-shadow: 2px 2px 5px black;
+    width: 14rem;
+    margin: 5px;
+    transition: all .7s;
+}
+.container{
+    position: relative;
+    top: 800px;
+}
+.card-body{
+    background-color: rgb(200, 200, 200);
+}
+.card:hover{
+    width: 13rem;
+    box-shadow: 10px 10px 10px black;
+
+}
+
+.oldschool{
+    background-color: green;
+    position: relative;
+    top: -11px;
+}
+.logobut {
+    padding: 20px;
+}
+
+.imglogo{
+    width: 200px;
+}
+.cabecera__responsive{
+    display: none;
+
+}
+
+@media only screen and (max-width: 990px) {
+    .cabecera{
+        display: none;
+    }
+    .cabecera__responsive{
+        display: block;
+    }
+    .footer{
+        flex-direction: column;
+    
+    }
+    .footer__redes{
+        left: 0%;
+    }
+    .footer__imagen{
+        padding: 20px;
+        width: 250px;
+    }
+    .servicios{
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "spa1"
+        "spa"
+        "teatro1"
+        "teatro"
+        "piscina1"
+        "piscina";
+        top: 850px;
+    }
+    .servicios__texto{
+        padding: 10px;
+    }
+    .servicios__texto span{
+        top: 0px;
+    }
+    .foto__spa{
+        grid-area: spa;
+    }
+    .foto__teatro{
+        grid-area: teatro;
+    }
+    .foto__piscina{
+        grid-area: piscina;
+    }
+    .texto__spa{
+        grid-area: spa1;
+    }
+    .texto__teatro{
+        grid-area: teatro1;
+    }
+    .texto__piscina{
+        grid-area: piscina1;
+    }
+}
