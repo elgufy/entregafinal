@@ -143,6 +143,24 @@
   background-size: 100% 100vh;
 }
 
+@media only screen and (max-width: 700px) {
+  .fondo__principal {
+    background-size: 100% 80vh;
+  }
+  .fondo__habitaciones {
+    background-size: 100% 80vh;
+  }
+  .fondo__servicios {
+    background-size: 100% 80vh;
+  }
+  .fondo__gastronomia {
+    background-size: 100% 80vh;
+  }
+  .fondo__contacto {
+    background-size: 100% 80vh;
+  }
+}
+
 .div-carousel {
   display: -webkit-box;
   display: -ms-flexbox;
