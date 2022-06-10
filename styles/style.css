@@ -459,4 +459,10 @@
     width: 250px;
   }
 }
+
+@media only screen and (max-width: 500px) {
+  .gastronomia .platos .platos__foto {
+    width: 200px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
