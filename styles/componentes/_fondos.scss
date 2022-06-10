@@ -23,7 +23,7 @@ background-size: 100% 100vh;
     background-repeat: no-repeat;
     background-size: 100% 100vh;
 }
-@media only screen and (max-width:700px){
+@media only screen and (max-width:800px){
     .fondo__principal{
         background-size: 100% 80vh;
     }
@@ -38,5 +38,22 @@ background-size: 100% 100vh;
     }
     .fondo__contacto{
         background-size: 100% 80vh;
+    }
+}
+@media only screen and (max-width:600px){
+    .fondo__principal{
+        background-size: 100% 50vh;
+    }
+    .fondo__habitaciones{
+        background-size: 100% 50vh;
+    }
+    .fondo__servicios{
+        background-size: 100% 50vh;
+    }
+    .fondo__gastronomia{
+        background-size: 100% 50vh;
+    }
+    .fondo__contacto{
+        background-size: 100% 50vh;
     }
 }
