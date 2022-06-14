@@ -502,7 +502,7 @@
 
 @media only screen and (max-width: 700px) {
   .gastronomia {
-    top: 400px;
+    top: 500px;
   }
   .gastronomia .platos .platos__foto {
     width: 250px;
