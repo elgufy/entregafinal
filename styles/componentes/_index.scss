@@ -2,6 +2,7 @@
 .div-carousel{
     display: flex;
     justify-content: center;
+    padding: 10px;
     .carousel{
         width: 60%;
         position: relative;
@@ -94,6 +95,11 @@
         }
         .texto__cocteles{
             grid-area: cocteles1;
+        }
+    }
+    .div-carousel{
+        .carousel{
+            width: 100%;
         }
     }
 }
